@@ -1,0 +1,30 @@
+{
+    "name": "dimrakitin/websocketserver",
+    "description": "WebSocketServer.",
+    "keywords": [
+        "package"
+    ],
+    "homepage": "https://github.com/Rakitin/WebSocketServer",
+    "license": "MIT",
+    "authors": [
+       {
+           "name": "Dmitry Rakitin",
+           "email": "dimrakitin@yandex.ru",
+           "homepage": "http://dimrakitin.com",
+           "role": "Developer"
+       }
+    ],
+    "require": {
+        "php" : ">=5.5.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "WebSocketServer\\": "src"
+        }
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.0-dev"
+        }
+    }
+}
