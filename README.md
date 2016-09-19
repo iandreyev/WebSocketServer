@@ -2,7 +2,7 @@
 
 [![Software License](https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat-square)](LICENSE.md)
 
-**WebSocketServer** 
+**WebSocketServer**
 
 ## Install
 
@@ -15,8 +15,8 @@ $ composer require dimrakitin/websocketserver
 ## Usage
 
 ``` php
-use ICon\ICon;
-$container = new ICon();
+use WebSocketServer\WebSocketServer;
+$server = new WebSocketServer();
 
 ```
 
