@@ -43,13 +43,13 @@ $server->onMessage = function ($server, $client, $data) {
 };
 ```
 
-** Run loop **
+**Run loop**
 
 ``` php
 $server->run();
 ```
 
-** Client code **
+**Client code**
 
 ``` javascript
 var wsUri = "ws://localhost:5555";
@@ -75,7 +75,7 @@ window.onbeforeunload = function() {
 ```
 
 
-Full example you can see at [github]()
+Full example you can see at [github](https://github.com/Rakitin/WebSocketChat)
 
 
 ## License
