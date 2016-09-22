@@ -317,24 +317,39 @@ class WebSocketServer
         @socket_write($client['socket'], $data, strlen($data));
     }
 
-    public function onConnect($callback)
+    public function setOnConnect($callback)
     {
         $this->callback_connect = $callback;
     }
 
-    public function onDisconnect($callback)
+    public function setOnDisconnect($callback)
     {
         $this->callback_disconnect = $callback;
     }
 
-    public function onMessage($callback)
+    public function setOnMessage($callback)
     {
         $this->callback_message = $callback;
     }
 
-    public function onLoop($callback)
+    public function setOnLoop($callback)
     {
         $this->callback_loop = $callback;
+    }
+
+    public function __set($attr, $value)
+    {
+        if ($attr == 'onConnect') {
+            $this->setOnConnect($value);
+        } elseif ($attr == 'onDisconnect') {
+            $this->setOnDisconnect($value);
+        } elseif ($attr == 'onMessage') {
+            $this->setOnMessage($value);
+        } elseif ($attr == 'onLoop') {
+            $this->setOnLoop($value);
+        } else {
+            throw new Exception("Attrebut: '".$attr."' does not exist \n");
+        }
     }
 
     public function getClients()
