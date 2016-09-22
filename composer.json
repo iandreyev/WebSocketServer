@@ -1,8 +1,10 @@
 {
     "name": "dimrakitin/websocketserver",
-    "description": "WebSocketServer.",
+    "description": "A WebSocket server class.",
+    "type": "library",
     "keywords": [
-        "package"
+        "package",
+        "websocket"
     ],
     "homepage": "https://github.com/Rakitin/WebSocketServer",
     "license": "MIT",
@@ -15,7 +17,8 @@
        }
     ],
     "require": {
-        "php" : ">=5.5.0"
+        "php" : ">=5.5.0",
+        "ext-sockets": "*"
     },
     "autoload": {
         "psr-4": {
